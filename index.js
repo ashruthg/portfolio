@@ -26,7 +26,15 @@ toggleBtn.addEventListener("click", () => {
 // Mobile Menu Toggle
 const menuBtn = document.getElementById("menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
+const menuLinks = document.querySelectorAll("#mobile-menu a");
 
 menuBtn.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
+});
+
+// Close mobile menu when a link is clicked
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+  });
 });
