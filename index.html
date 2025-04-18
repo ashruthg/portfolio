@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind config to enable class-based dark mode -->
+    <script>
+        tailwind.config = {
+        darkMode: 'class',
+        }
+    </script>
+    <title>Ashruth | Portfolio</title>
+</head>
+<body class="bg-white text-black dark:bg-black dark:text-white">
+    <header class="bg-white dark:bg-gray-900 shadow-md fixed top-0 left-0 z-50 w-full">
+        <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+            <div class="text-xl font-bold text-purple-500">Ashruth</div>
+            <!-- Hamburger -->
+            <button id="menu-btn" class="md:hidden text-2xl">
+                &#9776;
+            </button>
+            <nav id="menu" class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-purple-500">Home</a>
+                <a href="#about" class="hover:text-purple-500">About</a>
+                <a href="#skills" class="hover:text-purple-500">Skills</a>
+                <a href="#projects" class="hover:text-purple-500">Projects</a>
+                <a href="#contact" class="hover:text-purple-500">Contact</a>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white dark:bg-gray-900 px-4 pb-4 space-y-2">
+            <a href="#home" class="block hover:text-purple-500">Home</a>
+            <a href="#about" class="block hover:text-purple-500">About</a>
+            <a href="#skills" class="block hover:text-purple-500">Skills</a>
+            <a href="#projects" class="block hover:text-purple-500">Projects</a>
+            <a href="#contact" class="block hover:text-purple-500">Contact</a>
+        </div>
+    </header>
+    
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center px-6 py-16">
+        <div class="flex flex-col-reverse sm:flex-row flex-wrap items-center justify-center gap-8 max-w-5xl">
+            <!-- Text -->
+            <div class="w-full sm:w-auto max-w-md text-center sm:text-left">
+                <h2 class="text-4xl font-bold mb-4">
+                    Hi, I'm <span class="text-purple-500">Ashruth 👋</span>
+                </h2>
+                <p class="text-lg">
+                    An Electrical Engineering undergraduate with a passion for web development. Eager to create real-world projects and grow as a developer — one line of code at a time.
+                </p>
+            </div>
+
+            <!-- Image -->
+            <div class="w-full sm:w-auto flex justify-center">
+                <img id="theme-image" src="./claymorphic-programmer.png" alt="Developer Illustration" class="w-60 sm:w-72" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="px-6 py-16 text-center">
+        <h2 class="text-3xl font-semibold text-purple-500 mb-4">About Me</h2>
+        <p class="max-w-3xl mx-auto text-gray-700 dark:text-gray-300">
+            I’m an Electrical Engineering student with a deep interest in web development and technology. While my academic background is rooted in circuits and machines, my passion led me to explore coding, and I’ve been diving into full-stack web development ever since. I’m currently building real-world projects and working hard to upskill myself alongside my college responsibilities. With graduation just a few months away, I’m focused on improving every day and preparing myself for a strong career in tech.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="px-6 py-16 text-center">
+        <h2 class="text-3xl font-semibold text-purple-500 mb-6">Skills</h2>
+        <div class="flex flex-wrap justify-center gap-4 text-sm">
+        <span class="bg-gray-200 dark:bg-white/10 px-4 py-2 rounded-md">HTML</span>
+        <span class="bg-gray-200 dark:bg-white/10 px-4 py-2 rounded-md">CSS</span>
+        <span class="bg-gray-200 dark:bg-white/10 px-4 py-2 rounded-md">Bootstrap</span>
+        <span class="bg-gray-200 dark:bg-white/10 px-4 py-2 rounded-md">JavaScript</span>
+        <span class="bg-gray-200 dark:bg-white/10 px-4 py-2 rounded-md">React</span>
+        <span class="bg-gray-200 dark:bg-white/10 px-4 py-2 rounded-md">Tailwind</span>
+        <span class="bg-gray-200 dark:bg-white/10 px-4 py-2 rounded-md">Node.js</span>
+        <span class="bg-gray-200 dark:bg-white/10 px-4 py-2 rounded-md">Express.js</span>
+        <span class="bg-gray-200 dark:bg-white/10 px-4 py-2 rounded-md">Python</span>
+        <span class="bg-gray-200 dark:bg-white/10 px-4 py-2 rounded-md">Git</span>
+        </div>
+    </section>
+    
+    <!-- Projects -->
+    <section id="projects" class="px-6 py-16 text-center">
+        <h2 class="text-3xl font-semibold text-purple-500 mb-6">Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <!-- Todos app -->
+            <a href="https://todos-sable-gamma.vercel.app/" target="_blank" class="bg-gray-100 dark:bg-white/5 p-4 rounded-lg shadow">
+                <img src="./todos.png" />
+                <h3 class="text-xl font-bold"> Todo List Web App </h3>
+                <p class="text-gray-700 dark:text-gray-300 mt-2">
+                    A simple and interactive Todo List built using HTML, CSS, and JavaScript. Users can add, delete, and mark tasks as completed. Data is saved in localStorage, ensuring tasks persist even after refreshing the page. Responsive design with clean UI.
+                </p>
+            </a>
+            <!-- Wikipedia search app -->
+            <a href="https://wikipedia-search-application-eta.vercel.app/" target="_blank" class="bg-gray-100 dark:bg-white/5 p-4 rounded-lg shadow">
+                <img src="./Wikipedia search application.png" />
+                <h3 class="text-xl font-bold"> Wikipedia Search Application </h3>
+                <p class="text-gray-700 dark:text-gray-300 mt-2">
+                    The Wikipedia Search App is a simple and functional web application that allows users to search for articles from Wikipedia using a keyword. The application fetches real-time data from a public API provided by NxtWave (which internally uses the Wikipedia API) and dynamically displays relevant results with titles, links, and descriptions.
+                </p>
+            </a>
+            <!-- Netflix Clone -->
+            <a href="https://netflix-clone-alpha-lyart.vercel.app/" target="_blank" class="bg-gray-100 dark:bg-white/5 p-4 rounded-lg shadow">
+                <img src="./netflix clone.png" class="w-full px-4"/>
+                <h3 class="text-xl font-bold">Netflix Clone</h3>
+                <p class="text-gray-700 dark:text-gray-300 mt-2">
+                    This is a static clone of the Netflix landing page, built using only HTML and CSS. It closely mimics the original Netflix homepage in terms of layout, visuals, and styling. The goal of this project was to improve my frontend skills by replicating a real-world, modern UI design.
+                </p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="px-6 py-16 text-center">
+        <h2 class="text-3xl font-semibold text-purple-500 mb-4">Contact Me</h2>
+        <p><a href="mailto:ashruth@123.com" class="hover:text-purple-500">Email: XXXX@123.com</a></p>
+        <p><a href="https://github.com/ashruthg" target="_blank" class="hover:text-purple-500">GitHub: github.com/ashruthg</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center p-4 text-sm text-gray-600 dark:text-gray-500">
+      &copy; 2025 Ashruth. All rights reserved.
+    </footer>
+  
+    <!-- Dark Mode Toggle Button -->
+    <button id="dark-mode-toggle" 
+    class="fixed bottom-6 right-6 bg-purple-600 text-white p-3 rounded-full shadow-lg hover:bg-purple-700 transition-all duration-300 z-50">
+    🌙
+    </button>
+
+    <script src="index.js"></script>
+</body>
+</html>
